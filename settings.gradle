@@ -1,2 +1,3 @@
 rootProject.name = 'springboot-examples'
+include 'springboot-02-config-examples'
 
