@@ -1,4 +1,5 @@
 rootProject.name = 'springboot-examples'
 include 'springboot-02-config-examples'
 include 'springboot-03-basic-examples'
+include 'springboot-04-web-examples'
 
