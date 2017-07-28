@@ -37,8 +37,14 @@
         <logger name="com.mhy.springboot" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
+        <logger name="org.springframework" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </logger>
         <Root level="error">
             <AppenderRef ref="Console"/>
         </Root>
     </Loggers>
 </Configuration>
+
+
+
