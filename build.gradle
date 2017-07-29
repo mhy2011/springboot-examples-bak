@@ -15,3 +15,9 @@ allprojects {
         compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.16'
     }
 }
+
+subprojects {
+    configurations {
+        all*.exclude module: 'spring-boot-starter-logging'
+    }
+}

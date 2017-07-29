@@ -3,6 +3,7 @@ buildscript {
 		springBootVersion = '1.5.6.RELEASE'
 	}
 	repositories {
+		maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
 		mavenCentral()
 	}
 	dependencies {
@@ -17,15 +18,10 @@ apply plugin: 'org.springframework.boot'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
-repositories {
-	mavenCentral()
-}
-
-
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web') {
-		exclude module: "spring-boot-starter-logging"
-	}
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-log4j2')
+	runtime('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
